@@ -1,38 +1,135 @@
-.App {
+body{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(228, 213, 228);
+  /* background-image: url(../public/blue-backdrop.jpg); */
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+main {
+  width: 480px;
+  margin: 20px auto;
+  height: 500px;
+  /* background-image: url(../public/background-pic.webp);
+  background-color: blueviolet;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  color: whitesmoke;
   text-align: center;
+  border-radius: 1rem;
+  min-height: 200px;
+  /* overflow: auto; */
+  margin-bottom: -4px;
+  /* -webkit-overflow-scrolling: touch; */
+}
+.heading {
+  background-color: rgb(192, 124, 192);;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-box {
+  background-color: white;
+  overflow: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.list-box {
+  background-color: white;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  border-radius: 1rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+  padding-left: 5px;
+  border-radius: 10px;
+  background-color: none;
+  height: 50px;
+  padding-top: 4.5%;
+  box-sizing: border-box;
+  text-align: center;
+  
 }
 
-.App-link {
-  color: #61dafb;
+form input {
+  width: 100%;
+  height: 35px;
+  margin-top: -15px;
+  border-radius: 1.2rem;
+  margin-left: -2px;
+  padding-right: 5px;
+  padding-left: 19px;
+  font-size: 12px;
+  font-style: Arial;
+  border-style: none;
+
+}
+form button {
+  margin-top: -8px;
+  margin-left: -40px;
+  border-radius: 1rem;
+  height: 22px;
+  width: 30px;
+}
+.task-item {
+  display: flex;
+  background-color: white;
+  margin: 0px 10px 7px;
+  /* margin-bottom: 7px;
+  margin-left: 10px; */
+  /* box-sizing: content-box; */
+}
+.task-item input[type="text"] {
+  width: 90%;
+  height: 35px;
+  /* margin-top: 15px; */
+  margin-bottom: 4px;
+  /* border-radius: 1.2rem; */
+  margin-left: -2px;
+  color: black;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 12px;
+  font-style: Arial, sans-serif;
+  border-style: none;
+}
+.checkbox {
+  background-color: transparent;
+  border: 0;
+}
+svg {
+  /* margin-top: 2px; */
+  fill: rgb(192, 124, 192);
+  height: 100%;
+  border-radius: 7rem;
+  background-color: transparent;
+  width: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit-btn {
+  margin-top: 8px;
+  margin-left: 10px;
+  border-radius: 1rem;
+  height: 22px;
+  width: 44px;
+  border-style: none;
+  background-color: white;
+  /* padding-left: 100px; */
 }
+.delete-btn {
+  margin-top: 4px;
+  /* margin-left: -40px; */
+  border-radius: 2rem;
+  height: 27px;
+  width: 5px;
+  border-style: none;
+  padding-right: 25px;
+  position: left;
+  background-color: white;
+  /* background-color:  rgb(255, 4, 4); */
+}
+/* .delete-btn svg {
+  padding-left: -3px;
+  margin-right: 2px;
+} */
