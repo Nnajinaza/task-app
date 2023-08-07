@@ -15,11 +15,13 @@ function TaskForm() {
     // if (input.trim() !== '' && !currentTask.some(task => task.text === input)) {
     //   setCurrentTask([newTask])
     //   console.log(newTask)
-    // }
-    if (currentTask.some(task => task.text === input)) {
+    if (currentTask.some(task => task.text === input.toLowerCase())) {
       alert("Task Already Exist")
-      console.log(newTask)
-        }
+    }  
+      // }
+    else if (input.trim() === "") {
+        alert("Add a new task")
+    }
     // if (task => task.text === "") {
     //   alert("Task Title Required")
     //   console.log(newTask)
